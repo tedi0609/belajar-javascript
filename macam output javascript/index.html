@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macam Output Javacript</title>
+</head>
+<body>
+    <script src="console.js"></script>
+    <script src="alert.js"></script>
+    <script>
+        //menggunkan fungsi alert()
+        alert("Selamat datang di tutorial belajar Javascript");
+
+        function sayHello(){
+            alert("Hello!");
+        }
+    </script>
+        <h1>Sedang Belajar javacript</h1>
+        <button onclick="sayHello()">Klik Aku!</button>
+
+
+        <!-- Menggunakan Fungsi Document.write()-->
+        <script>
+            document.write("<h1>Hello World!</h1>");
+            document.write("<hr>");
+            document.write("<p>saya sedang belajar javacript</p>");
+            document.write("di <b>petanikode.com</b>");
+        </script>
+
+        <!-- Menggunakan inner html -->
+       <h1>Tutorial Javacript untuk Pemula</h1>
+       <div id="hasil-output"></div>
+
+       <script>
+           // membuat objek elemen
+           var hasil = document.getElementById("hasil-output");
+
+           // menampilkan output ke elemet hasil
+           hasil.innerHTML = "<p>Aku suka Javacript</p>";
+       </script>
+
+</body>
+</html>

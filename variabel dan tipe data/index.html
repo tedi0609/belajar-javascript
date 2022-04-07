@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <tite>variabel dan tipe data</title>
+</head>
+<body>
+    <script>
+        var title = "Belajar Pemrograman Javascript";
+
+        var siteName = "Petani Kode";
+        var url = "https://www.petanikode.com";
+        var isActive = true;
+        var visitorCount = 4921;
+
+        //camel case
+        var site_name = "Petani Kode";
+        var visitor_count = 1234;
+
+        //membuat variabel dengan kata kunci let
+        let price = 15000;
+
+        //membuat variabel tanpa awalan apapun
+        stok = 12;
+         //undifined | variabel tidak diisi
+        var x;
+
+        //menampilkan variabel ke jendela dialog (alert) 
+        alert("Selamat datang di " + siteName);
+
+        //menampilkan variabel ke dalam HTML
+        document.write("Nama Situs" + " " + siteName + "<br>");
+        document.write("Jumlah Pengunjung: " + visitorCount + "<br>");
+        document.write("Status Aktif:" + isActive + "<br>");
+        document.write("Alamat URL:" + url + "<br>");
+        // mengisi ulang variabel
+        var age = 18;
+        age = 21;
+
+        // menghapus variabel
+        bookTitle = "Belajar Pemrograman Javascript";
+        delete bookTitle;
+
+        //mengecek tipe data menggunkan typeof
+        // var name =  "tedi";
+        // var age = 22;
+        // var single = true;
+        
+        // typeof name;
+        // typeof age;
+        // typeof single;
+
+        // //aturan penulisan variabel 
+
+
+        // contoh:
+        // Ada beberapa aturan penulisan variabel dalam Javascript:
+
+        // Penamaan variabel tidak boleh menggunakan angka di depannya.
+
+        // contoh:
+
+        // // salah
+        // var 123nama = "Petanikode";
+
+        // // benar
+        // var nama123 = "Petani Kode";
+        // var _nama = "Petani Kode";
+        // Penamaan variabel dianjurkan menggunakan camelCase apabila tediri dari dua suku kata.
+
+        // Contoh:
+
+        // var fullName = "Petani Kode";
+        // Penamaan variabel dianjurkan menggunakan bahasa inggris
+
+        // Contoh:
+
+        // var postTitle = "Tutorial Javascript untuk Pemula";
+        </script>
+</body>
+</html>
