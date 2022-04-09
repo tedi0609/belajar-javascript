@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>percabangan switch/case</title>
+</head>
+
+<body>
+    <script>
+        var jawab = prompt("Kamu beruntung! Silakan pilih hadiahnya dengan memasukkan angka 1 sampai 5");
+        var hadiah = "";
+
+        switch (jawab) {
+            case "1":
+                hadiah = "Tisu";
+                break;
+            case "2":
+                hadiah = "1 Kotak Kopi";
+                break;
+            case "4":
+                hadiah = "Sticker";
+                break;
+            case "5":
+                hadiah = "Minyak Goreng";
+                break;
+            default:
+                document.write("<p>Opps! anda salah pilih</p>");
+        }
+        if (hadiah == "") {
+            document.write("<p>Kamu gagal mendapat hadiah</p>");
+        } else {
+            document.write("<h2>Selamat kamu mendapatkan " + hadiah + "</h2");
+        }
+
+
+        var nilai = prompt("input nilai:");
+        var grade = "";
+
+        switch (true) {
+            case nilai >= 90:
+                grade = "A";
+                break;
+            case nilai < 80:
+                grade = "B+";
+                break;
+            case nilai < 70:
+                grade = "B";
+                break;
+            case nilai < 60:
+                grade = "C+";
+                break;
+            case nilai < 50:
+                grade = "C";
+                break;
+            case nilai < 40:
+                grade = "D";
+                break;
+            case nilai < 30:
+                grade = "E";
+                break;
+            default:
+                grade = "F";
+        }
+        document.write(`<p>Grade anda: ${grade}</p>`);
+    </script>
+</body>
+
+</html>
