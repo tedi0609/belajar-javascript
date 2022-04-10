@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>array dan perulangan</title>
+</head>
+
+<body>
+   <script>
+      // // membuat array
+      // var products = ["Senter", "Radio", "Antena", "Obeng"];
+
+      // document.write("<h3>Daftar Produk:</h3>");
+      // document.write("<ol>");
+      // // menggunakan perulangan untuk mencetak semua
+      // for (let i = 0; i < products.length; i++) {
+      //    document.write(`<li>${products[i]}</li>`);
+      // }
+      // document.write("</ol>");
+
+
+      // menggunakan method forEach().
+      var products = ["Senter", "Radio", "Antena", "Obeng"];
+
+      document.write("<h3>Daftar Produk:</h3>");
+      document.write("<ol>");
+      // menggunakan perulangan untuk mencetak semua
+      products.forEach((data) => {
+         document.write(`<li>${data}</li>`);
+      });
+      document.write("</ol>");
+
+
+      // cara menambah data ke dalam array
+      // 1. mengisi menggunakan indexs;
+      // 2. mengisi menggunakan method push()
+
+      //contoh dengan mengguanakan indexs
+      var buah = ["Apel", "Jeruk", "Manggis"];
+
+      buah[4] = "Durian";
+      // document.write(buah[4]);
+
+      //contoh dengan menggunakan method push()
+      // membuat array
+      var products = ["Senter", "Radio", "Antena", "Obeng"];
+
+      // menambahkan tv ke dalam array products
+      products.push("Televisi");
+      products.push("Alarm", "Gembok", "Paku");
+
+      // menampilakan isi array
+      document.write(products);
+
+
+      //cara menghapush array
+      // 1. menggunakan delete;
+      // 2. menggunakan method pop()
+      // 3. menghpaus methode shift
+
+      //contoh
+      delete products[0]; //hapus data menggunakan indexs
+      buah.pop() // hapus data dari belakang
+      buah.shift() //hapus data dari depan
+      bauh.splice(2, 1);
+
+
+      // mengubah isi array
+      var bahasa = ["Javascript", "Kotlin", "Java", "PHP", "Python"];
+
+      bahasa[1] = "C++";
+   </script>
+</body>
+
+</html>
