@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>membuat fungsi</title>
+   <script>
+      // membauat fungsi dengan cara biasa
+      function namaFungsi() {
+         console.log("Hello World!");
+      }
+
+      //membuat fungsi dengan ekspresi
+      var namaFungsi = function () {
+         console.log("Hello World!");
+      }
+
+      //membuat fungsi dengan tanda panah
+      var namaFungsi = () => {
+         console.log("Hello World!");
+      }
+      // atau seperti ini (Jika isi fungsi haya satu baris);
+      var namaFungsi = () => console.log("Hellow World!");
+
+      //membuat fungsi dengan konstruktor
+      var namaFungsi = new Function(`console.log("Hello World!");`);
+
+
+      //cara memanggil / eksekusi fungsi
+      //membuat fungsi
+      function sayHello() {
+         console.log("Hello World!");
+      }
+
+      //memanggil fungsi
+      sayHello() //maka akan menghasilkan -> Hello Worl!
+
+      //memanggil fungsi melalui attribut event pada html
+      //membuat fungsi
+      var sayHello = () => alert("Hello World!");
+
+
+      // fungsi dengan parameter
+      function kali(a, b) {
+         hasilKali = a * b;
+         console.log("Hasil kali a*b = " + hasilKali);
+      }
+
+      kali(3, 2); // -> hasil kali a*b = 6
+
+      //fungsi yang mengembalikan nilai
+      function bagi(a, b) {
+         hasilBagi = a / b;
+         return hasilBagi;
+      }
+      // memanggil fungsi
+      var nilai1 = 20;
+      var nilai2 = 5;
+      var hasilPembagian = bagi(nilai1, nilai2);
+
+      console.log(hasilPembagian); //-> 4
+   </script>
+</head>
+
+<body>
+   <!-- memanggil fungsi saat link diklik  -->
+   <a href="#" onclick="sayHello()">Klik Aku!</a>
+
+
+</body>
+
+</html>
